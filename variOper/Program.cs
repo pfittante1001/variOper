@@ -82,9 +82,9 @@ namespace variOper
             int hundred = int.Parse(Console.ReadLine());
             hundred = hundred * 100;
             Console.Write("How many quarters? \n");
-            int quarters = int.Parse(Console.ReadLine());
+            double quarters = double.Parse(Console.ReadLine());
             quarters = quarters / 4;
-            int donationAmt = (dollars + fives + tens + twenty + fifty + hundred + quarters);
+            double donationAmt = (dollars + fives + tens + twenty + fifty + hundred + quarters);
             Console.WriteLine(donationAmt);
         }
     }
