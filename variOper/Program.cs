@@ -86,3 +86,6 @@ namespace variOper
             quarters = quarters / 4;
             int donationAmt = (dollars + fives + tens + twenty + fifty + hundred + quarters);
             Console.WriteLine(donationAmt);
+        }
+    }
+}
