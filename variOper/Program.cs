@@ -56,36 +56,41 @@ namespace variOper
             Console.Write("How many packages of Diapers do you need? ");
             int numPkgs = int.Parse(Console.ReadLine());
             */
-            Console.Write("What is the name of the donor? \n");
+            Console.Write("What is the name of the donor: ");
             string donorName = Console.ReadLine();
-            Console.WriteLine("What is the donor address? \n");
+            Console.Write("What is the donor address: ");
             string donorAdd = Console.ReadLine();
-            Console.Write("What is the email of the donor? \n");
+            Console.Write("What is the email of the donor: ");
             string donorEmail = Console.ReadLine();
-            Console.Write("What is the fiscal year? \n");
+            Console.Write("What is the fiscal year: ");
             string fiscalYear = Console.ReadLine();
-            Console.Write("How many One dollar bills? \n");
+            Console.Write("How many One dollar bills: ");
             int dollars = int.Parse(Console.ReadLine());
-            Console.Write("How many five dollar bills? \n");
+            Console.Write("How many five dollar bills: ");
             int fives = int.Parse(Console.ReadLine());
             fives = fives * 5;
-            Console.Write("How many Ten dollar bills? \n");
+            Console.Write("How many Ten dollar bills: ");
             int tens = int.Parse(Console.ReadLine());
             tens = tens * 10;
-            Console.Write("How many twenty dollar bills? \n");
+            Console.Write("How many twenty dollar bills: ");
             int twenty = int.Parse(Console.ReadLine());
             twenty = twenty * 20;
-            Console.Write("How many fifty dollar bills? \n");
+            Console.Write("How many fifty dollar bills: ");
             int fifty = int.Parse(Console.ReadLine());
             fifty = fifty * 50;
-            Console.Write("How many hundred dollar bills? \n");
+            Console.Write("How many hundred dollar bills: ");
             int hundred = int.Parse(Console.ReadLine());
             hundred = hundred * 100;
-            Console.Write("How many quarters? \n");
+            Console.Write("How many quarters: ");
             double quarters = double.Parse(Console.ReadLine());
             quarters = quarters / 4;
             double donationAmt = (dollars + fives + tens + twenty + fifty + hundred + quarters);
-            Console.WriteLine(donationAmt);
+            Console.WriteLine("Donor Name: " + donorName);
+            Console.WriteLine("Donor Address: " + donorAdd);
+            Console.WriteLine("Donor Email: " + donorEmail);
+            Console.WriteLine("Fiscal Year: " + fiscalYear);
+            Console.WriteLine("Donation Amount: " + donationAmt);
+
         }
     }
 }
