@@ -55,7 +55,7 @@ namespace variOper
 
             Console.Write("How many packages of Diapers do you need? ");
             int numPkgs = int.Parse(Console.ReadLine());
-            */
+            
             Console.Write("What is the name of the donor: ");
             string donorName = Console.ReadLine();
             Console.Write("What is the donor address: ");
@@ -90,6 +90,39 @@ namespace variOper
             Console.WriteLine("Donor Email: " + donorEmail);
             Console.WriteLine("Fiscal Year: " + fiscalYear);
             Console.WriteLine("Donation Amount: " + donationAmt);
+           
+            double ttlAmount;
+            Console.Write("How many grades did you receive: ");
+            double gradeTtl = double.Parse(Console.ReadLine());
+            Console.Write("How many A's did you receive: ");
+            double gradeATtl = double.Parse(Console.ReadLine());
+            gradeATtl = (gradeATtl * 4);
+            Console.Write("How many B's did you receive: ");
+            double gradeBTtl = double.Parse(Console.ReadLine());
+            gradeBTtl = (gradeBTtl * 3);
+            Console.Write("How many C's did you receive: ");
+            double gradeCTtl = double.Parse(Console.ReadLine());
+            gradeCTtl = (gradeCTtl * 2);
+            Console.Write("How many D's did you receive: ");
+            double gradeDTtl = double.Parse(Console.ReadLine());
+            gradeDTtl = (gradeDTtl * 1);
+            Console.Write("How many F's did you receive: ");
+            double gradeFTtl = double.Parse(Console.ReadLine());
+            gradeFTtl = (gradeFTtl * 0);
+
+            ttlAmount = ((gradeATtl + gradeBTtl + gradeCTtl + gradeDTtl + gradeFTtl) / gradeTtl);
+            Console.WriteLine(" Your GPA is: " + ttlAmount + ".0");
+            */
+            
+            Console.Write("How many buses are availaible: ");
+            int availBus = int.Parse(Console.ReadLine());
+            Console.Write("How many students will be traveling: ");
+            int numStudents = int.Parse(Console.ReadLine());
+            int maxBusCap = (54 * availBus);
+            
+
+            Console.WriteLine("The total student capacity for " + availBus + " number of buses is " + maxBusCap);
+            Console.WriteLine("The number of students that will ride in other transportation is " + (maxBusCap - numStudents));
 
         }
     }
