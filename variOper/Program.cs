@@ -112,7 +112,7 @@ namespace variOper
 
             ttlAmount = ((gradeATtl + gradeBTtl + gradeCTtl + gradeDTtl + gradeFTtl) / gradeTtl);
             Console.WriteLine(" Your GPA is: " + ttlAmount + ".0");
-            */
+            
             
             Console.Write("How many buses are availaible: ");
             int availBus = int.Parse(Console.ReadLine());
@@ -123,7 +123,7 @@ namespace variOper
 
             Console.WriteLine("The total student capacity for " + availBus + " number of buses is " + maxBusCap);
             Console.WriteLine("The number of students that will ride in other transportation is " + (maxBusCap - numStudents));
-
+            */
         }
     }
 }
