@@ -124,6 +124,41 @@ namespace variOper
             Console.WriteLine("The total student capacity for " + availBus + " number of buses is " + maxBusCap);
             Console.WriteLine("The number of students that will ride in other transportation is " + (maxBusCap - numStudents));
             */
+
+            //tshirts 3 differat graohics super swim = 15 be the shark = 17.50 baby bubbles = 4.75 create app for total tshirts
+            // total number of shirts
+            // sub total without tax
+            // grand total with .8%
+            int shirtsTttl;
+            double ssShirtsTtl;
+            double bsShirtsTtl;
+            double bbShirtsTtl;
+            double subTtl;
+            double grandTtl;
+
+            //Purchase T-Shirts Program
+
+            Console.Write(" How many Super Swin would you like to purchase: ");
+            int ssShirts = int.Parse(Console.ReadLine());
+
+            Console.Write(" How many Be The Shark t-shirts would you like to purchase: ");
+            int bslShirts = int.Parse(Console.ReadLine());
+
+            Console.Write(" How many Baby Bubbles t-shirts would you like to purchase: ");
+            int bbShirts = int.Parse(Console.ReadLine());
+
+            shirtsTttl = ssShirts + bslShirts + bbShirts;
+            ssShirtsTtl = ssShirts * 15.00;
+            bsShirtsTtl = bslShirts * 17.50;
+            bbShirtsTtl = bbShirts * 4.75;
+            subTtl = ssShirtsTtl + bsShirtsTtl + bbShirtsTtl;
+            double tax = subTtl * .08;
+            grandTtl = tax + subTtl;
+
+            Console.WriteLine("Totql number of shirts is: " + shirtsTttl);
+            Console.WriteLine("The subtotal is: " + subTtl);
+            Console.WriteLine("The Grabd total is: " + grandTtl);
+
         }
     }
 }
